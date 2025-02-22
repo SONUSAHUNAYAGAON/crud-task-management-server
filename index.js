@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // MongoDB Connection
 mongoose
-  .connect(process.env.DB_URL)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connected to MongoDB");
     // Start the server after successfully connecting to MongoDB
